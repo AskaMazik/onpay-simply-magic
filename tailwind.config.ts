@@ -52,6 +52,17 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				simply: {
+					purple: 'hsl(var(--simply-purple))',
+					'purple-light': 'hsl(var(--simply-purple-light))',
+					'purple-dark': 'hsl(var(--simply-purple-dark))',
+					gray: 'hsl(var(--simply-gray))',
+					'gray-dark': 'hsl(var(--simply-gray-dark))',
+				},
+				feature: {
+					bg: 'hsl(var(--feature-bg))',
+					border: 'hsl(var(--feature-border))',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
