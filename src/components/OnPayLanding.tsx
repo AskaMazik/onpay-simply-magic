@@ -259,31 +259,31 @@ const OnPayLanding = () => {
               <div className="mb-5">
                 <h2 className="h4 fw-semibold text-dark mb-4">What's included:</h2>
                 <div className="row g-4">
-                  <div className="col-md-6">
-                    <div className="bg-light p-4 rounded-3 border" style={{border: '1px solid #e5e5e5 !important'}}>
+                  <div className="col-md-6 d-flex">
+                    <div className="bg-light p-4 rounded-3 border w-100 d-flex flex-column" style={{border: '1px solid #e5e5e5 !important', minHeight: '120px'}}>
                       <h3 className="fw-bold text-dark mb-2" style={{fontSize: '15px'}}>Essential payment methods</h3>
-                      <p className="text-muted mb-0" style={{fontSize: '14px'}}>Get paid seamlessly with the methods your customers already trust</p>
+                      <p className="text-muted mb-0 flex-grow-1" style={{fontSize: '14px'}}>Get paid seamlessly with the methods your customers already trust</p>
                     </div>
                   </div>
                   
-                  <div className="col-md-6">
-                    <div className="bg-light p-4 rounded-3 border" style={{border: '1px solid #e5e5e5 !important'}}>
+                  <div className="col-md-6 d-flex">
+                    <div className="bg-light p-4 rounded-3 border w-100 d-flex flex-column" style={{border: '1px solid #e5e5e5 !important', minHeight: '120px'}}>
                       <h3 className="fw-bold text-dark mb-2" style={{fontSize: '15px'}}>Transparent pricing</h3>
-                      <p className="text-muted mb-0" style={{fontSize: '14px'}}>No setup costs, no gateway charges — you only pay your card processing rate</p>
+                      <p className="text-muted mb-0 flex-grow-1" style={{fontSize: '14px'}}>No setup costs, no gateway charges — you only pay your card processing rate</p>
                     </div>
                   </div>
                   
-                  <div className="col-md-6">
-                    <div className="bg-light p-4 rounded-3 border" style={{border: '1px solid #e5e5e5 !important'}}>
+                  <div className="col-md-6 d-flex">
+                    <div className="bg-light p-4 rounded-3 border w-100 d-flex flex-column" style={{border: '1px solid #e5e5e5 !important', minHeight: '120px'}}>
                       <h3 className="fw-bold text-dark mb-2" style={{fontSize: '15px'}}>Fast setup</h3>
-                      <p className="text-muted mb-0" style={{fontSize: '14px'}}>Configure in minutes, start accepting payments today</p>
+                      <p className="text-muted mb-0 flex-grow-1" style={{fontSize: '14px'}}>Configure in minutes, start accepting payments today</p>
                     </div>
                   </div>
                   
-                  <div className="col-md-6">
-                    <div className="bg-light p-4 rounded-3 border" style={{border: '1px solid #e5e5e5 !important'}}>
+                  <div className="col-md-6 d-flex">
+                    <div className="bg-light p-4 rounded-3 border w-100 d-flex flex-column" style={{border: '1px solid #e5e5e5 !important', minHeight: '120px'}}>
                       <h3 className="fw-bold text-dark mb-2" style={{fontSize: '15px'}}>Your own dashboard</h3>
-                      <p className="text-muted mb-0" style={{fontSize: '14px'}}>Full visibility and control over all transactions</p>
+                      <p className="text-muted mb-0 flex-grow-1" style={{fontSize: '14px'}}>Full visibility and control over all transactions</p>
                     </div>
                   </div>
                 </div>
