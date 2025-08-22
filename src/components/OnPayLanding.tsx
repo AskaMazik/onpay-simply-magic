@@ -169,7 +169,10 @@ const OnPayLanding = () => {
                   Start accepting online payments today — only pay when you sell.
                 </h2>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Turn your <strong className="text-gray-900">online visitors into paying customers</strong>. Activate OnPay and start accepting <strong className="text-gray-900">all the key payment methods</strong> to grow your business in Denmark and abroad. There are <strong className="text-green-600">no setup costs and no gateway charges</strong> — you only pay your card processing rate. Most merchants <strong className="text-gray-900">go live and start selling within hours, not days</strong>.
+                  Turn your <strong className="text-gray-900">online visitors into paying customers</strong>. Activate OnPay and start accepting <strong className="text-gray-900">all the key payment methods</strong> to grow your business in Denmark and abroad.
+                </p>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  There are <strong className="text-gray-900">no setup costs and no gateway charges</strong> — you only pay your card processing rate. Most merchants <strong className="text-gray-900">go live and start selling within hours, not days</strong>.
                 </p>
                 <div className="text-center">
                   <Button 
@@ -184,6 +187,57 @@ const OnPayLanding = () => {
                 </div>
               </CardContent>
             </Card>
+
+            {/* What You Get Section */}
+            <div className="mb-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-white">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4">What you get:</h3>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="font-medium text-gray-900 mb-1">Essential payment methods</h4>
+                      <p className="text-sm text-gray-600">Cards, Apple Pay, Google Pay, Klarna</p>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-900 mb-1">Transparent pricing</h4>
+                      <p className="text-sm text-gray-600">You only pay when you sell, no monthly fees</p>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-900 mb-1">Fast setup</h4>
+                      <p className="text-sm text-gray-600">Configure in minutes, start accepting payments today</p>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-900 mb-1">Your own dashboard</h4>
+                      <p className="text-sm text-gray-600">Full visibility and control over all transactions</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-blue-200 bg-gradient-to-br from-blue-50 to-white">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Here's how it works:</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold">1</div>
+                      <span className="text-sm text-gray-700">Activate</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold">2</div>
+                      <span className="text-sm text-gray-700">Set up payment processing</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold">3</div>
+                      <span className="text-sm text-gray-700">Connect your store</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold">4</div>
+                      <span className="text-sm text-gray-700">Start earning</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
 
             {/* OnPay Package Section */}
             <div className="mb-6">
