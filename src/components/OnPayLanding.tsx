@@ -157,8 +157,8 @@ const OnPayLanding = () => {
               </h1>
 
               {/* Main Card */}
-              <div className="card border-0 shadow-sm mb-5">
-                <div className="card-body p-4">
+              <div className="card mb-5" style={{border: '1px solid #e5e5e5'}}>
+                <div className="card-body p-5">
                   <h2 className="h4 fw-semibold text-dark mb-3">
                     Start accepting online payments today — only pay when you sell.
                   </h2>
@@ -170,7 +170,7 @@ const OnPayLanding = () => {
                       Activate OnPay Payments
                     </button>
                     <div className="small text-success fw-medium">
-                      Try it today, pay nothing until you sell
+                      Go live in minutes
                     </div>
                   </div>
                 </div>
@@ -185,7 +185,7 @@ const OnPayLanding = () => {
                 {/* Standard Package */}
                 <div className="card border-simply-purple position-relative" style={{maxWidth: '28rem', borderWidth: '2px'}}>
                   <div className="position-absolute top-0 start-0 ms-4" style={{transform: 'translateY(-50%)'}}>
-                    <span className="badge simply-purple small px-3 py-1">
+                    <span className="badge simply-purple small px-3 py-2" style={{borderRadius: '12px', fontWeight: '600'}}>
                       FREE
                     </span>
                   </div>
@@ -260,28 +260,28 @@ const OnPayLanding = () => {
                 <h2 className="h4 fw-semibold text-dark mb-4">What's included:</h2>
                 <div className="row g-4">
                   <div className="col-md-6">
-                    <div className="bg-light p-4 rounded-3">
+                    <div className="bg-light p-4 rounded-3 border" style={{border: '1px solid #e5e5e5 !important'}}>
                       <h3 className="fw-bold text-dark mb-2" style={{fontSize: '15px'}}>Essential payment methods</h3>
                       <p className="text-muted mb-0" style={{fontSize: '14px'}}>Get paid seamlessly with the methods your customers already trust</p>
                     </div>
                   </div>
                   
                   <div className="col-md-6">
-                    <div className="bg-light p-4 rounded-3">
+                    <div className="bg-light p-4 rounded-3 border" style={{border: '1px solid #e5e5e5 !important'}}>
                       <h3 className="fw-bold text-dark mb-2" style={{fontSize: '15px'}}>Transparent pricing</h3>
                       <p className="text-muted mb-0" style={{fontSize: '14px'}}>No setup costs, no gateway charges — you only pay your card processing rate</p>
                     </div>
                   </div>
                   
                   <div className="col-md-6">
-                    <div className="bg-light p-4 rounded-3">
+                    <div className="bg-light p-4 rounded-3 border" style={{border: '1px solid #e5e5e5 !important'}}>
                       <h3 className="fw-bold text-dark mb-2" style={{fontSize: '15px'}}>Fast setup</h3>
                       <p className="text-muted mb-0" style={{fontSize: '14px'}}>Configure in minutes, start accepting payments today</p>
                     </div>
                   </div>
                   
                   <div className="col-md-6">
-                    <div className="bg-light p-4 rounded-3">
+                    <div className="bg-light p-4 rounded-3 border" style={{border: '1px solid #e5e5e5 !important'}}>
                       <h3 className="fw-bold text-dark mb-2" style={{fontSize: '15px'}}>Your own dashboard</h3>
                       <p className="text-muted mb-0" style={{fontSize: '14px'}}>Full visibility and control over all transactions</p>
                     </div>
@@ -295,54 +295,54 @@ const OnPayLanding = () => {
                 <p className="text-muted mb-4">Most merchants go live and start selling within hours, not days.</p>
                 
                 <div className="bg-light rounded-3 p-5">
-                  <div className="row justify-content-center align-items-center g-0">
-                    <div className="col-auto text-center">
-                      <div className="step-circle-purple d-flex align-items-center justify-content-center mx-auto mb-3" style={{width: '40px', height: '40px', borderRadius: '50%', backgroundColor: '#6f42c1'}}>
-                        <span className="text-white fw-bold" style={{fontSize: '16px'}}>1</span>
+                  <div className="d-flex justify-content-center align-items-center">
+                    <div className="text-center">
+                      <div className="d-flex align-items-center justify-content-center mx-auto mb-3" style={{width: '52px', height: '52px', borderRadius: '50%', border: '2px solid #c156db', backgroundColor: 'transparent'}}>
+                        <span className="fw-bold" style={{fontSize: '16px', color: '#c156db'}}>1</span>
                       </div>
-                      <div style={{width: '120px'}}>
+                      <div style={{width: '140px'}}>
                         <h3 className="fw-bold text-dark mb-2" style={{fontSize: '14px'}}>Activate</h3>
                         <p className="text-muted mb-0" style={{fontSize: '13px'}}>One click to enable OnPay</p>
                       </div>
                     </div>
                     
-                    <div className="col-auto px-4">
-                      <div style={{width: '40px', height: '2px', backgroundColor: '#ddd'}}></div>
+                    <div className="px-4">
+                      <div style={{width: '60px', height: '2px', backgroundColor: '#ddd'}}></div>
                     </div>
                     
-                    <div className="col-auto text-center">
-                      <div className="step-circle-purple d-flex align-items-center justify-content-center mx-auto mb-3" style={{width: '40px', height: '40px', borderRadius: '50%', backgroundColor: '#6f42c1'}}>
-                        <span className="text-white fw-bold" style={{fontSize: '16px'}}>2</span>
+                    <div className="text-center">
+                      <div className="d-flex align-items-center justify-content-center mx-auto mb-3" style={{width: '52px', height: '52px', borderRadius: '50%', border: '2px solid #c156db', backgroundColor: 'transparent'}}>
+                        <span className="fw-bold" style={{fontSize: '16px', color: '#c156db'}}>2</span>
                       </div>
-                      <div style={{width: '120px'}}>
+                      <div style={{width: '140px'}}>
                         <h3 className="fw-bold text-dark mb-2" style={{fontSize: '14px'}}>Set up payment processing</h3>
                         <p className="text-muted mb-0" style={{fontSize: '13px'}}>Instant Clearhaus contract activation</p>
                       </div>
                     </div>
                     
-                    <div className="col-auto px-4">
-                      <div style={{width: '40px', height: '2px', backgroundColor: '#ddd'}}></div>
+                    <div className="px-4">
+                      <div style={{width: '60px', height: '2px', backgroundColor: '#ddd'}}></div>
                     </div>
                     
-                    <div className="col-auto text-center">
-                      <div className="step-circle-purple d-flex align-items-center justify-content-center mx-auto mb-3" style={{width: '40px', height: '40px', borderRadius: '50%', backgroundColor: '#6f42c1'}}>
-                        <span className="text-white fw-bold" style={{fontSize: '16px'}}>3</span>
+                    <div className="text-center">
+                      <div className="d-flex align-items-center justify-content-center mx-auto mb-3" style={{width: '52px', height: '52px', borderRadius: '50%', border: '2px solid #c156db', backgroundColor: 'transparent'}}>
+                        <span className="fw-bold" style={{fontSize: '16px', color: '#c156db'}}>3</span>
                       </div>
-                      <div style={{width: '120px'}}>
+                      <div style={{width: '140px'}}>
                         <h3 className="fw-bold text-dark mb-2" style={{fontSize: '14px'}}>Connect your store</h3>
                         <p className="text-muted mb-0" style={{fontSize: '13px'}}>Plugin or API integration</p>
                       </div>
                     </div>
                     
-                    <div className="col-auto px-4">
-                      <div style={{width: '40px', height: '2px', backgroundColor: '#ddd'}}></div>
+                    <div className="px-4">
+                      <div style={{width: '60px', height: '2px', backgroundColor: '#ddd'}}></div>
                     </div>
                     
-                    <div className="col-auto text-center">
-                      <div className="step-circle-purple d-flex align-items-center justify-content-center mx-auto mb-3" style={{width: '40px', height: '40px', borderRadius: '50%', backgroundColor: '#6f42c1'}}>
-                        <span className="text-white fw-bold" style={{fontSize: '16px'}}>4</span>
+                    <div className="text-center">
+                      <div className="d-flex align-items-center justify-content-center mx-auto mb-3" style={{width: '52px', height: '52px', borderRadius: '50%', border: '2px solid #c156db', backgroundColor: 'transparent'}}>
+                        <span className="fw-bold" style={{fontSize: '16px', color: '#c156db'}}>4</span>
                       </div>
-                      <div style={{width: '120px'}}>
+                      <div style={{width: '140px'}}>
                         <h3 className="fw-bold text-dark mb-2" style={{fontSize: '14px'}}>Start earning</h3>
                         <p className="text-muted mb-0" style={{fontSize: '13px'}}>Accept payments immediately</p>
                       </div>
@@ -357,7 +357,7 @@ const OnPayLanding = () => {
                   Activate OnPay Payments
                 </button>
                 <div className="small text-success fw-medium">
-                  Try it today, pay nothing until you sell
+                  Go live in minutes
                 </div>
               </div>
             </div>
