@@ -178,8 +178,8 @@ const OnPayLanding = () => {
                   >
                     Activate OnPay Payments
                   </Button>
-                  <div className="text-sm text-green-600 font-medium">
-                    Try it today — pay nothing until you sell
+                  <div className="text-xs text-green-600 font-medium">
+                    Try it today, pay nothing until you sell
                   </div>
                 </div>
               </CardContent>
@@ -366,8 +366,8 @@ const OnPayLanding = () => {
               >
                 Activate OnPay Payments
               </Button>
-              <div className="text-sm text-green-600 font-medium">
-                Try it today — pay nothing until you sell
+              <div className="text-xs text-green-600 font-medium">
+                Try it today, pay nothing until you sell
               </div>
             </div>
           </div>
