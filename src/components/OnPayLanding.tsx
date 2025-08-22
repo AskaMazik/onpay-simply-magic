@@ -166,7 +166,7 @@ const OnPayLanding = () => {
                     Turn your <strong className="text-dark">online visitors into paying customers</strong>. Activate OnPay and start accepting all the key payment methods to grow your business in Denmark and abroad.
                   </p>
                   <div className="text-center">
-                    <button className="btn simply-purple px-4 py-2 fw-medium mb-2" style={{fontSize: '16px'}}>
+                    <button className="btn simply-purple px-5 py-3 fw-semibold mb-3" style={{fontSize: '18px', borderRadius: '8px'}}>
                       Activate OnPay Payments
                     </button>
                     <div className="small text-success fw-medium">
