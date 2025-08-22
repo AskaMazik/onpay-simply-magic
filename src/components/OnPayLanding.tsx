@@ -190,16 +190,16 @@ const OnPayLanding = () => {
               <h2 className="text-xl font-semibold text-gray-900">OnPay Package</h2>
             </div>
 
-            <div className="flex justify-center mb-8">
-              {/* Free Package */}
-              <Card className="border-2 relative max-w-md w-full" style={{ borderColor: '#b722c1' }}>
+            <div className="mb-8">
+              {/* Standard Package */}
+              <Card className="border-2 relative max-w-md" style={{ borderColor: '#b722c1' }}>
                 <div className="absolute -top-3 left-6">
                   <Badge className="text-white text-xs px-3 py-1" style={{ backgroundColor: '#b722c1' }}>
-                    Most Popular
+                    free
                   </Badge>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Free</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Standard</h3>
                   <div className="text-2xl font-bold text-gray-900 mb-1">0 DKK / mo</div>
                   <p className="text-sm text-gray-600 mb-6">Only pay your card processing rate (from 1.25%)</p>
                   
