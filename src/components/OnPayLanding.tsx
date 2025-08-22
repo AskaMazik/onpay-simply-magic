@@ -190,9 +190,14 @@ const OnPayLanding = () => {
               <h2 className="text-xl font-semibold text-gray-900">OnPay Package</h2>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8 max-w-4xl">
+            <div className="flex justify-center mb-8">
               {/* Free Package */}
-              <Card className="border-2 relative">
+              <Card className="border-2 relative max-w-md w-full" style={{ borderColor: '#b722c1' }}>
+                <div className="absolute -top-3 left-6">
+                  <Badge className="text-white text-xs px-3 py-1" style={{ backgroundColor: '#b722c1' }}>
+                    Most Popular
+                  </Badge>
+                </div>
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold text-gray-900 mb-1">Free</h3>
                   <div className="text-2xl font-bold text-gray-900 mb-1">0 DKK / mo</div>
@@ -259,71 +264,6 @@ const OnPayLanding = () => {
                   </div>
                 </CardContent>
               </Card>
-
-              {/* Pro Package */}
-              <Card className="border-2 relative" style={{ borderColor: '#b722c1' }}>
-                <div className="absolute -top-3 left-6">
-                  <Badge className="text-white text-xs px-3 py-1" style={{ backgroundColor: '#b722c1' }}>
-                    Most Popular
-                  </Badge>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Pro</h3>
-                  <div className="text-2xl font-bold text-gray-900 mb-1">299 DKK / mo</div>
-                  <p className="text-sm text-gray-600 mb-6">Lower processing rates + premium features</p>
-                  
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="font-bold text-gray-900 mb-2">Everything in Free, plus:</h4>
-                      <div className="space-y-2">
-                        <div className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-gray-700">Reduced processing rate from 0.95%</span>
-                        </div>
-                        <div className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-gray-700">Priority customer support</span>
-                        </div>
-                        <div className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-gray-700">Advanced analytics & reporting</span>
-                        </div>
-                        <div className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-gray-700">Custom checkout branding</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div>
-                      <h4 className="font-bold text-gray-900 mb-2">Business tools</h4>
-                      <div className="space-y-2">
-                        <div className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-gray-700">Automated reconciliation</span>
-                        </div>
-                        <div className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-gray-700">Multi-user dashboard access</span>
-                        </div>
-                        <div className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-gray-700">Webhook notifications</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="pt-2">
-                      <Button 
-                        style={{ backgroundColor: '#b722c1' }} 
-                        className="w-full hover:opacity-90 text-white"
-                      >
-                        Upgrade to Pro
-                      </Button>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
 
             {/* What's Included Section */}
@@ -331,7 +271,6 @@ const OnPayLanding = () => {
               <h2 className="text-xl font-semibold text-gray-900 mb-6">What's included:</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
-                  <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#b722c1' }}></div>
                   <div>
                     <h3 className="font-bold text-gray-900 text-sm mb-1">Essential payment methods</h3>
                     <p className="text-xs text-gray-600">Cards, Apple Pay, Google Pay, Klarna</p>
@@ -339,7 +278,6 @@ const OnPayLanding = () => {
                 </div>
                 
                 <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
-                  <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#b722c1' }}></div>
                   <div>
                     <h3 className="font-bold text-gray-900 text-sm mb-1">Transparent pricing</h3>
                     <p className="text-xs text-gray-600">No setup costs, no gateway charges — you only pay your card processing rate</p>
@@ -347,7 +285,6 @@ const OnPayLanding = () => {
                 </div>
                 
                 <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
-                  <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#b722c1' }}></div>
                   <div>
                     <h3 className="font-bold text-gray-900 text-sm mb-1">Fast setup</h3>
                     <p className="text-xs text-gray-600">Configure in minutes, start accepting payments today</p>
@@ -355,7 +292,6 @@ const OnPayLanding = () => {
                 </div>
                 
                 <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
-                  <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#b722c1' }}></div>
                   <div>
                     <h3 className="font-bold text-gray-900 text-sm mb-1">Your own dashboard</h3>
                     <p className="text-xs text-gray-600">Full visibility and control over all transactions</p>
@@ -372,47 +308,47 @@ const OnPayLanding = () => {
               <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
                 <div className="flex items-start justify-between">
                   <div className="flex flex-col items-center text-center flex-1">
-                    <div className="w-10 h-10 rounded-full text-white flex items-center justify-center text-sm font-bold mb-4" 
-                         style={{ backgroundColor: '#b722c1' }}>1</div>
+                    <div className="w-10 h-10 rounded-full border-2 bg-white flex items-center justify-center text-sm font-bold mb-4" 
+                         style={{ borderColor: '#b722c1', color: '#b722c1' }}>1</div>
                     <div className="min-h-[60px] flex flex-col justify-start">
                       <h3 className="font-bold text-gray-900 text-sm mb-1">Activate</h3>
                       <p className="text-xs text-gray-600">One click to enable OnPay</p>
                     </div>
                   </div>
                   
-                  <div className="hidden md:flex items-center px-4 pt-5">
+                  <div className="hidden md:flex items-center px-4" style={{ marginTop: '20px' }}>
                     <div className="w-8 h-0.5 bg-gray-300"></div>
                   </div>
                   
                   <div className="flex flex-col items-center text-center flex-1">
-                    <div className="w-10 h-10 rounded-full text-white flex items-center justify-center text-sm font-bold mb-4" 
-                         style={{ backgroundColor: '#b722c1' }}>2</div>
+                    <div className="w-10 h-10 rounded-full border-2 bg-white flex items-center justify-center text-sm font-bold mb-4" 
+                         style={{ borderColor: '#b722c1', color: '#b722c1' }}>2</div>
                     <div className="min-h-[60px] flex flex-col justify-start">
                       <h3 className="font-bold text-gray-900 text-sm mb-1">Set up payment processing</h3>
                       <p className="text-xs text-gray-600">Instant Clearhaus contract activation</p>
                     </div>
                   </div>
                   
-                  <div className="hidden md:flex items-center px-4 pt-5">
+                  <div className="hidden md:flex items-center px-4" style={{ marginTop: '20px' }}>
                     <div className="w-8 h-0.5 bg-gray-300"></div>
                   </div>
                   
                   <div className="flex flex-col items-center text-center flex-1">
-                    <div className="w-10 h-10 rounded-full text-white flex items-center justify-center text-sm font-bold mb-4" 
-                         style={{ backgroundColor: '#b722c1' }}>3</div>
+                    <div className="w-10 h-10 rounded-full border-2 bg-white flex items-center justify-center text-sm font-bold mb-4" 
+                         style={{ borderColor: '#b722c1', color: '#b722c1' }}>3</div>
                     <div className="min-h-[60px] flex flex-col justify-start">
                       <h3 className="font-bold text-gray-900 text-sm mb-1">Connect your store</h3>
                       <p className="text-xs text-gray-600">Plugin or API integration</p>
                     </div>
                   </div>
                   
-                  <div className="hidden md:flex items-center px-4 pt-5">
+                  <div className="hidden md:flex items-center px-4" style={{ marginTop: '20px' }}>
                     <div className="w-8 h-0.5 bg-gray-300"></div>
                   </div>
                   
                   <div className="flex flex-col items-center text-center flex-1">
-                    <div className="w-10 h-10 rounded-full text-white flex items-center justify-center text-sm font-bold mb-4" 
-                         style={{ backgroundColor: '#b722c1' }}>4</div>
+                    <div className="w-10 h-10 rounded-full border-2 bg-white flex items-center justify-center text-sm font-bold mb-4" 
+                         style={{ borderColor: '#b722c1', color: '#b722c1' }}>4</div>
                     <div className="min-h-[60px] flex flex-col justify-start">
                       <h3 className="font-bold text-gray-900 text-sm mb-1">Start earning</h3>
                       <p className="text-xs text-gray-600">Accept payments immediately</p>
@@ -423,7 +359,7 @@ const OnPayLanding = () => {
             </div>
 
             {/* Bottom CTA Button */}
-            <div className="text-center">
+            <div className="text-center mt-12">
               <Button 
                 style={{ backgroundColor: '#b722c1' }} 
                 className="hover:opacity-90 text-white px-8 py-3 text-lg font-medium mb-2"
