@@ -169,10 +169,13 @@ const OnPayLanding = () => {
                   Start accepting online payments today — only pay when you sell.
                 </h2>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Turn your online visitors into paying customers. Activate OnPay and start accepting all the key payment methods to grow your business in Denmark and abroad. There are no setup costs and no gateway charges — you only pay your card processing rate. Most merchants go live and start selling within hours, not days.
+                  Turn your <strong className="text-gray-900">online visitors into paying customers</strong>. Activate OnPay and start accepting <strong className="text-gray-900">all the key payment methods</strong> to grow your business in Denmark and abroad. There are <strong className="text-green-600">no setup costs and no gateway charges</strong> — you only pay your card processing rate. Most merchants <strong className="text-gray-900">go live and start selling within hours, not days</strong>.
                 </p>
                 <div className="text-center">
-                  <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg font-medium mb-2">
+                  <Button 
+                    style={{ backgroundColor: '#b722c1' }} 
+                    className="hover:opacity-90 text-white px-8 py-3 text-lg font-medium mb-2"
+                  >
                     Activate OnPay Payments
                   </Button>
                   <div className="text-sm text-green-600 font-medium">
@@ -183,39 +186,77 @@ const OnPayLanding = () => {
             </Card>
 
             {/* OnPay Package Section */}
-            <div className="flex items-start justify-between mb-6">
+            <div className="mb-6">
               <h2 className="text-xl font-semibold text-gray-900">OnPay Package</h2>
-              <div className="text-lg font-semibold text-gray-900">Get paid online</div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="max-w-md">
               {/* Free Package */}
               <Card className="border-2">
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Free</h3>
-                  <p className="text-sm text-gray-600 mb-6">Pay only your card processing rate starting from 1.25%</p>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Free</h3>
+                  <div className="text-2xl font-bold text-gray-900 mb-1">0 DKK / mo</div>
+                  <p className="text-sm text-gray-600 mb-6">Only pay your card processing rate (from 1.25%)</p>
                   
-                  <div className="space-y-3">
-                    {packageFeatures.map((feature, index) => (
-                      <div key={index} className="flex items-start space-x-2">
-                        <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm text-gray-700">{feature}</span>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="font-bold text-gray-900 mb-2">Get paid online</h4>
+                      <div className="space-y-2">
+                        <div className="flex items-start space-x-2">
+                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-gray-700">Accept cards</span>
+                        </div>
+                        <div className="flex items-start space-x-2">
+                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-gray-700">Apple Pay® & Google Pay™</span>
+                        </div>
+                        <div className="flex items-start space-x-2">
+                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-gray-700">Klarna (Buy now, pay later)</span>
+                        </div>
+                        <div className="flex items-start space-x-2">
+                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-gray-700">PayPal</span>
+                        </div>
                       </div>
-                    ))}
+                    </div>
+
+                    <div>
+                      <h4 className="font-bold text-gray-900 mb-2">Built on trust</h4>
+                      <div className="space-y-2">
+                        <div className="flex items-start space-x-2">
+                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-gray-700">Payments processed by Clearhaus</span>
+                        </div>
+                        <div className="flex items-start space-x-2">
+                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-gray-700">PCI DSS compliant</span>
+                        </div>
+                        <div className="flex items-start space-x-2">
+                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-gray-700">3D Secure included</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h4 className="font-bold text-gray-900 mb-2">Stay in control</h4>
+                      <div className="space-y-2">
+                        <div className="flex items-start space-x-2">
+                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-gray-700">Real-time dashboard</span>
+                        </div>
+                        <div className="flex items-start space-x-2">
+                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-gray-700">WooCommerce, PrestaShop & more integrations</span>
+                        </div>
+                        <div className="flex items-start space-x-2">
+                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-gray-700">API & SDK for custom builds</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </CardContent>
-              </Card>
-
-              {/* Empty Cards */}
-              <Card className="border">
-                <CardContent className="p-6">
-                  <div className="h-96"></div>
-                </CardContent>
-              </Card>
-
-              <Card className="border">
-                <CardContent className="p-6">
-                  <div className="h-96"></div>
                 </CardContent>
               </Card>
             </div>
