@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Check, Home, User, UserPlus, Globe, Settings, Palette, FileText, Mouse, Mail, Network, Database, Zap, Shield, CreditCard, HardDrive, LifeBuoy, Building2, ChevronDown } from "lucide-react";
 
 const OnPayLanding = () => {
@@ -46,86 +43,82 @@ const OnPayLanding = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
+    <div className="min-vh-100 bg-light d-flex flex-column">
       {/* Top Header */}
-      <div className="bg-white border-b border-gray-200 px-4 py-3">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-6 h-6 bg-purple-600 rounded flex items-center justify-center">
-                <span className="text-white font-bold text-xs">⚡</span>
+      <div className="bg-white border-bottom px-4 py-3">
+        <div className="d-flex align-items-center justify-content-between">
+          <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center me-4">
+              <div className="d-flex align-items-center me-2">
+                <div className="simply-purple d-flex align-items-center justify-content-center" style={{width: '24px', height: '24px', borderRadius: '4px'}}>
+                  <span className="text-white fw-bold" style={{fontSize: '12px'}}>⚡</span>
+                </div>
+                <span className="fw-bold text-dark ms-2">Simply.com</span>
               </div>
-              <span className="font-bold text-gray-900">Simply.com</span>
             </div>
             
-            <div className="flex items-center space-x-2 bg-gray-100 rounded px-3 py-1.5">
-              <span className="text-sm text-gray-700">cheerfulbambino.dk</span>
-              <ChevronDown className="h-4 w-4 text-gray-500" />
+            <div className="d-flex align-items-center bg-light rounded px-3 py-2">
+              <span className="small text-secondary">cheerfulbambino.dk</span>
+              <ChevronDown size={16} className="ms-2 text-muted" />
             </div>
           </div>
           
-          <div className="flex items-center space-x-3">
-            <div className="flex items-center space-x-1">
-              <div className="w-5 h-3 bg-blue-600 rounded-sm"></div>
-              <div className="w-3 h-3 bg-white border rounded-sm"></div>
-              <div className="w-5 h-3 bg-red-600 rounded-sm"></div>
+          <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center me-3">
+              <div className="flag-dk-blue flag-icon"></div>
+              <div className="flag-dk-white flag-icon mx-1"></div>
+              <div className="flag-dk-red flag-icon"></div>
             </div>
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded text-sm">
-              <span className="mr-2">👤</span>
-              Joanna
-              <ChevronDown className="h-4 w-4 ml-1" />
-            </Button>
+            <button className="btn simply-purple px-3 py-2 d-flex align-items-center">
+              <span className="me-2">👤</span>
+              <span className="small">Joanna</span>
+              <ChevronDown size={16} className="ms-1" />
+            </button>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-1">
+      <div className="d-flex flex-grow-1">
         {/* Sidebar */}
-        <div className="w-60 bg-gray-100 border-r border-gray-200">
+        <div className="sidebar" style={{width: '240px'}}>
           <div className="p-4">
-            <nav className="space-y-1">
+            <nav className="mb-4">
               {sidebarItems.map((item, index) => (
                 <a
                   key={index}
                   href="#"
-                  className={`flex items-center space-x-3 px-3 py-2 rounded text-sm ${
-                    item.isRefer 
-                      ? 'text-green-600 hover:bg-green-50' 
-                      : 'text-gray-700 hover:bg-gray-200'
+                  className={`sidebar-item d-flex align-items-center px-3 py-2 rounded small mb-1 ${
+                    item.isRefer ? 'refer-friend' : ''
                   }`}
                 >
-                  <item.icon className="h-4 w-4" />
+                  <item.icon size={16} className="me-3" />
                   <span>{item.label}</span>
                 </a>
               ))}
             </nav>
 
-            <div className="mt-6 mb-3">
-              <div className="text-xs font-medium text-gray-600 px-3 py-2 border-b border-gray-300">
+            <div className="mb-3">
+              <div className="small fw-medium text-secondary px-3 py-2 border-bottom">
                 cheerfulbambino.dk
               </div>
             </div>
 
-            <nav className="space-y-1">
+            <nav className="mb-4">
               {domainItems.map((item, index) => (
                 <a
                   key={index}
                   href="#"
-                  className={`flex items-center justify-between px-3 py-2 rounded text-sm group ${
-                    item.active 
-                      ? 'bg-purple-100 text-purple-800' 
-                      : 'text-gray-700 hover:bg-gray-200'
+                  className={`sidebar-item d-flex align-items-center justify-content-between px-3 py-2 rounded small mb-1 ${
+                    item.active ? 'active' : ''
                   }`}
                 >
-                  <div className="flex items-center space-x-3">
-                    <item.icon className="h-4 w-4" />
+                  <div className="d-flex align-items-center">
+                    <item.icon size={16} className="me-3" />
                     <span>{item.label}</span>
                   </div>
                   {item.badge && (
-                    <span className={`text-xs px-1.5 py-0.5 rounded ${
-                      item.badge === 'New' 
-                        ? 'bg-green-500 text-white' 
-                        : 'bg-blue-500 text-white'
+                    <span className={`badge small ${
+                      item.badge === 'New' ? 'badge-new' : 'badge-beta'
                     }`}>
                       {item.badge}
                     </span>
@@ -134,20 +127,20 @@ const OnPayLanding = () => {
               ))}
             </nav>
 
-            <div className="mt-6 mb-3">
-              <div className="text-xs font-medium text-gray-600 px-3 py-2 border-b border-gray-300">
+            <div className="mb-3">
+              <div className="small fw-medium text-secondary px-3 py-2 border-bottom">
                 Simply.com Services
               </div>
             </div>
 
-            <nav className="space-y-1">
+            <nav>
               {serviceItems.map((item, index) => (
                 <a
                   key={index}
                   href="#"
-                  className="flex items-center space-x-3 px-3 py-2 text-gray-700 hover:bg-gray-200 rounded text-sm"
+                  className="sidebar-item d-flex align-items-center px-3 py-2 rounded small mb-1"
                 >
-                  <item.icon className="h-4 w-4" />
+                  <item.icon size={16} className="me-3" />
                   <span>{item.label}</span>
                 </a>
               ))}
@@ -156,218 +149,216 @@ const OnPayLanding = () => {
         </div>
 
         {/* Main Content */}
-        <div className="flex-1 bg-white">
-          <div className="max-w-5xl mx-auto p-8">
-            <h1 className="text-2xl font-normal text-gray-900 mb-8">
-              Payment gateway <span className="text-gray-500 font-normal">cheerfulbambino.dk</span>
-            </h1>
+        <div className="flex-grow-1 bg-white">
+          <div className="container-fluid" style={{maxWidth: '1200px'}}>
+            <div className="p-5">
+              <h1 className="h2 fw-normal text-dark mb-5">
+                Payment gateway <span className="text-muted fw-normal">cheerfulbambino.dk</span>
+              </h1>
 
-            {/* Main Card */}
-            <Card className="mb-8">
-              <CardContent className="p-6">
-                <h2 className="text-xl font-semibold text-gray-900 mb-4">
-                  Start accepting online payments today — only pay when you sell.
-                </h2>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  Turn your <strong className="text-gray-900">online visitors into paying customers</strong>. Activate OnPay and start accepting all the key payment methods to grow your business in Denmark and abroad.
-                </p>
-                <div className="text-center">
-                  <Button 
-                    style={{ backgroundColor: '#b722c1' }} 
-                    className="hover:opacity-90 text-white px-8 py-3 text-lg font-medium mb-2"
-                  >
-                    Activate OnPay Payments
-                  </Button>
-                  <div className="text-xs text-green-600 font-medium">
-                    Go live in minutes
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* OnPay Package Section */}
-            <div className="mb-6">
-              <h2 className="text-xl font-semibold text-gray-900">OnPay Package</h2>
-            </div>
-
-            <div className="mb-8">
-              {/* Standard Package */}
-              <Card className="border-2 relative max-w-md" style={{ borderColor: '#b722c1' }}>
-                <div className="absolute -top-3 left-6">
-                  <Badge className="text-white text-xs px-3 py-1" style={{ backgroundColor: '#b722c1' }}>
-                    FREE
-                  </Badge>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Standard</h3>
-                  <div className="text-2xl font-bold text-gray-900 mb-1">0 DKK / mo</div>
-                  <p className="text-sm text-gray-600 mb-6">Only pay your card processing rate (from 1.25%)</p>
-                  
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="font-bold text-gray-900 mb-2">Get paid online</h4>
-                      <div className="space-y-2">
-                        <div className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-gray-700">Accept cards</span>
-                        </div>
-                        <div className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-gray-700">Apple Pay® & Google Pay™</span>
-                        </div>
-                        <div className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-gray-700">Klarna (Buy now, pay later)</span>
-                        </div>
-                        <div className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-gray-700">PayPal</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div>
-                      <h4 className="font-bold text-gray-900 mb-2">Built on trust</h4>
-                      <div className="space-y-2">
-                        <div className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-gray-700">Payments processed by Clearhaus</span>
-                        </div>
-                        <div className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-gray-700">PCI DSS compliant</span>
-                        </div>
-                        <div className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-gray-700">3D Secure included</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div>
-                      <h4 className="font-bold text-gray-900 mb-2">Stay in control</h4>
-                      <div className="space-y-2">
-                        <div className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-gray-700">Real-time dashboard</span>
-                        </div>
-                        <div className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-gray-700">WooCommerce, PrestaShop & more integrations</span>
-                        </div>
-                        <div className="flex items-start space-x-2">
-                          <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm text-gray-700">API & SDK for custom builds</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* What's Included Section */}
-            <div className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-900 mb-6">What's included:</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
-                  <div>
-                    <h3 className="font-bold text-gray-900 text-sm mb-1">Essential payment methods</h3>
-                    <p className="text-xs text-gray-600">Get paid seamlessly with the methods your customers already trust</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
-                  <div>
-                    <h3 className="font-bold text-gray-900 text-sm mb-1">Transparent pricing</h3>
-                    <p className="text-xs text-gray-600">No setup costs, no gateway charges — you only pay your card processing rate</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
-                  <div>
-                    <h3 className="font-bold text-gray-900 text-sm mb-1">Fast setup</h3>
-                    <p className="text-xs text-gray-600">Configure in minutes, start accepting payments today</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
-                  <div>
-                    <h3 className="font-bold text-gray-900 text-sm mb-1">Your own dashboard</h3>
-                    <p className="text-xs text-gray-600">Full visibility and control over all transactions</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* How to Get Started Section */}
-            <div className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-900 mb-2">How to get started:</h2>
-              <p className="text-gray-600 mb-6">Most merchants go live and start selling within hours, not days.</p>
-              
-              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                <div className="flex items-start justify-between">
-                  <div className="flex flex-col items-center text-center flex-1">
-                    <div className="w-10 h-10 rounded-full border-2 bg-white flex items-center justify-center text-sm font-bold mb-4" 
-                         style={{ borderColor: '#b722c1', color: '#b722c1' }}>1</div>
-                    <div className="min-h-[60px] flex flex-col justify-start">
-                      <h3 className="font-bold text-gray-900 text-sm mb-1">Activate</h3>
-                      <p className="text-xs text-gray-600">One click to enable OnPay</p>
-                    </div>
-                  </div>
-                  
-                  <div className="hidden md:flex items-center px-4" style={{ marginTop: '20px' }}>
-                    <div className="w-8 h-0.5 bg-gray-300"></div>
-                  </div>
-                  
-                  <div className="flex flex-col items-center text-center flex-1">
-                    <div className="w-10 h-10 rounded-full border-2 bg-white flex items-center justify-center text-sm font-bold mb-4" 
-                         style={{ borderColor: '#b722c1', color: '#b722c1' }}>2</div>
-                    <div className="min-h-[60px] flex flex-col justify-start">
-                      <h3 className="font-bold text-gray-900 text-sm mb-1">Set up payment processing</h3>
-                      <p className="text-xs text-gray-600">Instant Clearhaus contract activation</p>
-                    </div>
-                  </div>
-                  
-                  <div className="hidden md:flex items-center px-4" style={{ marginTop: '20px' }}>
-                    <div className="w-8 h-0.5 bg-gray-300"></div>
-                  </div>
-                  
-                  <div className="flex flex-col items-center text-center flex-1">
-                    <div className="w-10 h-10 rounded-full border-2 bg-white flex items-center justify-center text-sm font-bold mb-4" 
-                         style={{ borderColor: '#b722c1', color: '#b722c1' }}>3</div>
-                    <div className="min-h-[60px] flex flex-col justify-start">
-                      <h3 className="font-bold text-gray-900 text-sm mb-1">Connect your store</h3>
-                      <p className="text-xs text-gray-600">Plugin or API integration</p>
-                    </div>
-                  </div>
-                  
-                  <div className="hidden md:flex items-center px-4" style={{ marginTop: '20px' }}>
-                    <div className="w-8 h-0.5 bg-gray-300"></div>
-                  </div>
-                  
-                  <div className="flex flex-col items-center text-center flex-1">
-                    <div className="w-10 h-10 rounded-full border-2 bg-white flex items-center justify-center text-sm font-bold mb-4" 
-                         style={{ borderColor: '#b722c1', color: '#b722c1' }}>4</div>
-                    <div className="min-h-[60px] flex flex-col justify-start">
-                      <h3 className="font-bold text-gray-900 text-sm mb-1">Start earning</h3>
-                      <p className="text-xs text-gray-600">Accept payments immediately</p>
+              {/* Main Card */}
+              <div className="card mb-5">
+                <div className="card-body p-4">
+                  <h2 className="h4 fw-semibold text-dark mb-4">
+                    Start accepting online payments today — only pay when you sell.
+                  </h2>
+                  <p className="text-secondary mb-4">
+                    Turn your <strong className="text-dark">online visitors into paying customers</strong>. Activate OnPay and start accepting all the key payment methods to grow your business in Denmark and abroad.
+                  </p>
+                  <div className="text-center">
+                    <button className="btn simply-purple px-4 py-3 h5 fw-medium mb-2">
+                      Activate OnPay Payments
+                    </button>
+                    <div className="small text-green-success fw-medium">
+                      Go live in minutes
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Bottom CTA Button */}
-            <div className="text-center mt-12">
-              <Button 
-                style={{ backgroundColor: '#b722c1' }} 
-                className="hover:opacity-90 text-white px-8 py-3 text-lg font-medium mb-2"
-              >
-                Activate OnPay Payments
-              </Button>
-              <div className="text-xs text-green-600 font-medium">
-                Try it today, pay nothing until you sell
+              {/* OnPay Package Section */}
+              <div className="mb-4">
+                <h2 className="h4 fw-semibold text-dark">OnPay Package</h2>
+              </div>
+
+              <div className="mb-5">
+                {/* Standard Package */}
+                <div className="card border-simply-purple position-relative" style={{maxWidth: '28rem', borderWidth: '2px'}}>
+                  <div className="position-absolute top-0 start-0 ms-4" style={{transform: 'translateY(-50%)'}}>
+                    <span className="badge simply-purple small px-3 py-1">
+                      FREE
+                    </span>
+                  </div>
+                  <div className="card-body p-4">
+                    <h3 className="h5 fw-semibold text-dark mb-1">Standard</h3>
+                    <div className="h2 fw-bold text-dark mb-1">0 DKK / mo</div>
+                    <p className="small text-secondary mb-4">Only pay your card processing rate (from 1.25%)</p>
+                    
+                    <div className="mb-4">
+                      <h4 className="fw-bold text-dark mb-3 h6">Get paid online</h4>
+                      <div className="mb-3">
+                        <div className="d-flex align-items-start mb-2">
+                          <Check size={16} className="text-success me-2 mt-1" />
+                          <span className="small text-secondary">Accept cards</span>
+                        </div>
+                        <div className="d-flex align-items-start mb-2">
+                          <Check size={16} className="text-success me-2 mt-1" />
+                          <span className="small text-secondary">Apple Pay® & Google Pay™</span>
+                        </div>
+                        <div className="d-flex align-items-start mb-2">
+                          <Check size={16} className="text-success me-2 mt-1" />
+                          <span className="small text-secondary">Klarna (Buy now, pay later)</span>
+                        </div>
+                        <div className="d-flex align-items-start mb-2">
+                          <Check size={16} className="text-success me-2 mt-1" />
+                          <span className="small text-secondary">PayPal</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="mb-4">
+                      <h4 className="fw-bold text-dark mb-3 h6">Built on trust</h4>
+                      <div className="mb-3">
+                        <div className="d-flex align-items-start mb-2">
+                          <Check size={16} className="text-success me-2 mt-1" />
+                          <span className="small text-secondary">Payments processed by Clearhaus</span>
+                        </div>
+                        <div className="d-flex align-items-start mb-2">
+                          <Check size={16} className="text-success me-2 mt-1" />
+                          <span className="small text-secondary">PCI DSS compliant</span>
+                        </div>
+                        <div className="d-flex align-items-start mb-2">
+                          <Check size={16} className="text-success me-2 mt-1" />
+                          <span className="small text-secondary">3D Secure included</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h4 className="fw-bold text-dark mb-3 h6">Stay in control</h4>
+                      <div>
+                        <div className="d-flex align-items-start mb-2">
+                          <Check size={16} className="text-success me-2 mt-1" />
+                          <span className="small text-secondary">Real-time dashboard</span>
+                        </div>
+                        <div className="d-flex align-items-start mb-2">
+                          <Check size={16} className="text-success me-2 mt-1" />
+                          <span className="small text-secondary">WooCommerce, PrestaShop & more integrations</span>
+                        </div>
+                        <div className="d-flex align-items-start mb-2">
+                          <Check size={16} className="text-success me-2 mt-1" />
+                          <span className="small text-secondary">API & SDK for custom builds</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* What's Included Section */}
+              <div className="mb-5">
+                <h2 className="h4 fw-semibold text-dark mb-4">What's included:</h2>
+                <div className="row g-3">
+                  <div className="col-md-6">
+                    <div className="feature-card p-4 rounded">
+                      <div>
+                        <h3 className="fw-bold text-dark small mb-2">Essential payment methods</h3>
+                        <p className="small text-secondary mb-0">Get paid seamlessly with the methods your customers already trust</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="col-md-6">
+                    <div className="feature-card p-4 rounded">
+                      <div>
+                        <h3 className="fw-bold text-dark small mb-2">Transparent pricing</h3>
+                        <p className="small text-secondary mb-0">No setup costs, no gateway charges — you only pay your card processing rate</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="col-md-6">
+                    <div className="feature-card p-4 rounded">
+                      <div>
+                        <h3 className="fw-bold text-dark small mb-2">Fast setup</h3>
+                        <p className="small text-secondary mb-0">Configure in minutes, start accepting payments today</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="col-md-6">
+                    <div className="feature-card p-4 rounded">
+                      <div>
+                        <h3 className="fw-bold text-dark small mb-2">Your own dashboard</h3>
+                        <p className="small text-secondary mb-0">Full visibility and control over all transactions</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* How to Get Started Section */}
+              <div className="mb-5">
+                <h2 className="h4 fw-semibold text-dark mb-2">How to get started:</h2>
+                <p className="text-secondary mb-4">Most merchants go live and start selling within hours, not days.</p>
+                
+                <div className="bg-light rounded p-4 border">
+                  <div className="row g-4 align-items-start">
+                    <div className="col-12 col-md-3 text-center">
+                      <div className="step-circle mx-auto mb-3">1</div>
+                      <div>
+                        <h3 className="fw-bold text-dark small mb-2">Activate</h3>
+                        <p className="small text-secondary mb-0">One click to enable OnPay</p>
+                      </div>
+                    </div>
+                    
+                    <div className="d-none d-md-block col-md-auto">
+                      <div className="step-connector"></div>
+                    </div>
+                    
+                    <div className="col-12 col-md-3 text-center">
+                      <div className="step-circle mx-auto mb-3">2</div>
+                      <div>
+                        <h3 className="fw-bold text-dark small mb-2">Set up payment processing</h3>
+                        <p className="small text-secondary mb-0">Instant Clearhaus contract activation</p>
+                      </div>
+                    </div>
+                    
+                    <div className="d-none d-md-block col-md-auto">
+                      <div className="step-connector"></div>
+                    </div>
+                    
+                    <div className="col-12 col-md-3 text-center">
+                      <div className="step-circle mx-auto mb-3">3</div>
+                      <div>
+                        <h3 className="fw-bold text-dark small mb-2">Connect your store</h3>
+                        <p className="small text-secondary mb-0">Plugin or API integration</p>
+                      </div>
+                    </div>
+                    
+                    <div className="d-none d-md-block col-md-auto">
+                      <div className="step-connector"></div>
+                    </div>
+                    
+                    <div className="col-12 col-md-3 text-center">
+                      <div className="step-circle mx-auto mb-3">4</div>
+                      <div>
+                        <h3 className="fw-bold text-dark small mb-2">Start earning</h3>
+                        <p className="small text-secondary mb-0">Accept payments immediately</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bottom CTA Button */}
+              <div className="text-center mt-5">
+                <button className="btn simply-purple px-4 py-3 h5 fw-medium mb-2">
+                  Activate OnPay Payments
+                </button>
+                <div className="small text-green-success fw-medium">
+                  Try it today, pay nothing until you sell
+                </div>
               </div>
             </div>
           </div>

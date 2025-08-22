@@ -1,142 +1,150 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Bootstrap CSS */
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-
-    /* Simply.com Purple Brand Colors */
-    --primary: 292 84% 51%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 240 6% 96%;
-    --secondary-foreground: 240 10% 3.9%;
-
-    --muted: 240 6% 96%;
-    --muted-foreground: 240 4% 46%;
-
-    --accent: 240 6% 96%;
-    --accent-foreground: 240 10% 3.9%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 6% 90%;
-    --input: 240 6% 90%;
-    --ring: 292 84% 51%;
-
-    /* Simply.com specific colors */
-    --simply-purple: 292 84% 51%;
-    --simply-purple-light: 292 84% 95%;
-    --simply-purple-dark: 292 84% 41%;
-    --simply-gray: 240 6% 96%;
-    --simply-gray-dark: 240 4% 46%;
-
-    /* Feature box colors */
-    --feature-bg: 0 0% 100%;
-    --feature-border: 240 6% 90%;
-
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(292 84% 51%) 0%, hsl(292 84% 41%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(240 6% 98%) 100%);
-
-    --radius: 0.5rem;
-
-    /* Simply.com specific colors */  
-    --simply-purple: 292 84% 51%;
-    --simply-purple-light: 292 84% 95%;
-    --simply-purple-dark: 292 84% 41%;
-    --simply-gray: 240 6% 96%;
-    --simply-gray-dark: 240 4% 46%;
-
-    /* Feature box colors */
-    --feature-bg: 0 0% 100%;
-    --feature-border: 240 6% 90%;
-
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(292 84% 51%) 0%, hsl(292 84% 41%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(240 6% 98%) 100%);
-
-    --sidebar-background: 240 10% 96%;
-    --sidebar-foreground: 240 10% 30%;
-    --sidebar-primary: 292 84% 51%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 10% 90%;
-    --sidebar-accent-foreground: 240 10% 20%;
-    --sidebar-border: 240 6% 85%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
+/* Custom Simply.com Design System */
+:root {
+  /* Simply.com Brand Colors */
+  --simply-purple: #b722c1;
+  --simply-purple-light: #f3e8f5;
+  --simply-purple-dark: #9a1ca7;
+  --simply-gray: #f8f9fa;
+  --simply-gray-dark: #6c757d;
+  --simply-border: #dee2e6;
+  
+  /* Feature colors */
+  --feature-bg: #ffffff;
+  --feature-border: #e9ecef;
+  
+  /* Text colors */
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --text-muted: #adb5bd;
+  
+  /* Background colors */
+  --bg-light: #f8f9fa;
+  --bg-white: #ffffff;
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
+/* Custom component styles */
+.simply-purple {
+  background-color: var(--simply-purple) !important;
+  color: white !important;
+}
 
-  body {
-    @apply bg-background text-foreground;
-  }
+.simply-purple:hover {
+  background-color: var(--simply-purple-dark) !important;
+  opacity: 0.9;
+}
+
+.text-simply-purple {
+  color: var(--simply-purple) !important;
+}
+
+.bg-simply-purple-light {
+  background-color: var(--simply-purple-light) !important;
+}
+
+.border-simply-purple {
+  border-color: var(--simply-purple) !important;
+}
+
+.text-green-success {
+  color: #22c55e !important;
+}
+
+.bg-gray-light {
+  background-color: var(--bg-light) !important;
+}
+
+.feature-card {
+  background-color: var(--feature-bg);
+  border: 1px solid var(--feature-border);
+}
+
+/* Custom sidebar styles */
+.sidebar {
+  background-color: #f1f3f4;
+  border-right: 1px solid var(--simply-border);
+}
+
+.sidebar-item {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.sidebar-item:hover {
+  background-color: #e9ecef;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.sidebar-item.active {
+  background-color: var(--simply-purple-light);
+  color: var(--simply-purple);
+}
+
+.sidebar-item.refer-friend {
+  color: #22c55e;
+}
+
+.sidebar-item.refer-friend:hover {
+  background-color: #dcfce7;
+}
+
+/* Custom badge styles */
+.badge-new {
+  background-color: #22c55e !important;
+}
+
+.badge-beta {
+  background-color: #3b82f6 !important;
+}
+
+/* Step indicator styles */
+.step-circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--simply-purple);
+  background-color: white;
+  color: var(--simply-purple);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.step-connector {
+  width: 32px;
+  height: 2px;
+  background-color: #d1d5db;
+  margin-top: 20px;
+}
+
+/* Card hover effects */
+.card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+/* Flag styles */
+.flag-icon {
+  width: 20px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.flag-dk-blue {
+  background-color: #1d4ed8;
+}
+
+.flag-dk-white {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+}
+
+.flag-dk-red {
+  background-color: #dc2626;
 }
