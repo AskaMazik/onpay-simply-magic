@@ -185,94 +185,12 @@ const OnPayLanding = () => {
               </CardContent>
             </Card>
 
-            {/* What's Included Section */}
-            <div className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-900 mb-6">What's included:</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
-                  <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#b722c1' }}></div>
-                  <div>
-                    <h3 className="font-bold text-gray-900 text-sm mb-1">Essential payment methods</h3>
-                    <p className="text-xs text-gray-600">Cards, Apple Pay, Google Pay, Klarna</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
-                  <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#b722c1' }}></div>
-                  <div>
-                    <h3 className="font-bold text-gray-900 text-sm mb-1">Transparent pricing</h3>
-                    <p className="text-xs text-gray-600">No setup costs, no gateway charges — you only pay your card processing rate</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
-                  <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#b722c1' }}></div>
-                  <div>
-                    <h3 className="font-bold text-gray-900 text-sm mb-1">Fast setup</h3>
-                    <p className="text-xs text-gray-600">Configure in minutes, start accepting payments today</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
-                  <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#b722c1' }}></div>
-                  <div>
-                    <h3 className="font-bold text-gray-900 text-sm mb-1">Your own dashboard</h3>
-                    <p className="text-xs text-gray-600">Full visibility and control over all transactions</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* How to Get Started Section */}
-            <div className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-900 mb-2">How to get started:</h2>
-              <p className="text-gray-600 mb-6">Most merchants go live and start selling within hours, not days.</p>
-              
-              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                <div className="flex items-center justify-between relative">
-                  <div className="flex flex-col items-center text-center flex-1">
-                    <div className="w-10 h-10 rounded-full text-white flex items-center justify-center text-sm font-bold mb-3" 
-                         style={{ backgroundColor: '#b722c1' }}>1</div>
-                    <h3 className="font-bold text-gray-900 text-sm mb-1">Activate</h3>
-                    <p className="text-xs text-gray-600">One click to enable OnPay</p>
-                  </div>
-                  
-                  <div className="hidden md:block w-8 h-0.5 bg-gray-300 mx-2"></div>
-                  
-                  <div className="flex flex-col items-center text-center flex-1">
-                    <div className="w-10 h-10 rounded-full text-white flex items-center justify-center text-sm font-bold mb-3" 
-                         style={{ backgroundColor: '#b722c1' }}>2</div>
-                    <h3 className="font-bold text-gray-900 text-sm mb-1">Set up payment processing</h3>
-                    <p className="text-xs text-gray-600">Instant Clearhaus contract activation</p>
-                  </div>
-                  
-                  <div className="hidden md:block w-8 h-0.5 bg-gray-300 mx-2"></div>
-                  
-                  <div className="flex flex-col items-center text-center flex-1">
-                    <div className="w-10 h-10 rounded-full text-white flex items-center justify-center text-sm font-bold mb-3" 
-                         style={{ backgroundColor: '#b722c1' }}>3</div>
-                    <h3 className="font-bold text-gray-900 text-sm mb-1">Connect your store</h3>
-                    <p className="text-xs text-gray-600">Plugin or API integration</p>
-                  </div>
-                  
-                  <div className="hidden md:block w-8 h-0.5 bg-gray-300 mx-2"></div>
-                  
-                  <div className="flex flex-col items-center text-center flex-1">
-                    <div className="w-10 h-10 rounded-full text-white flex items-center justify-center text-sm font-bold mb-3" 
-                         style={{ backgroundColor: '#b722c1' }}>4</div>
-                    <h3 className="font-bold text-gray-900 text-sm mb-1">Start earning</h3>
-                    <p className="text-xs text-gray-600">Accept payments immediately</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* OnPay Package Section */}
             <div className="mb-6">
               <h2 className="text-xl font-semibold text-gray-900">OnPay Package</h2>
             </div>
 
-            <div className="max-w-md">
+            <div className="max-w-md mb-8">
               {/* Free Package */}
               <Card className="border-2">
                 <CardContent className="p-6">
@@ -341,6 +259,107 @@ const OnPayLanding = () => {
                   </div>
                 </CardContent>
               </Card>
+            </div>
+
+            {/* What's Included Section */}
+            <div className="mb-8">
+              <h2 className="text-xl font-semibold text-gray-900 mb-6">What's included:</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                  <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#b722c1' }}></div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 text-sm mb-1">Essential payment methods</h3>
+                    <p className="text-xs text-gray-600">Cards, Apple Pay, Google Pay, Klarna</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                  <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#b722c1' }}></div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 text-sm mb-1">Transparent pricing</h3>
+                    <p className="text-xs text-gray-600">No setup costs, no gateway charges — you only pay your card processing rate</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                  <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#b722c1' }}></div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 text-sm mb-1">Fast setup</h3>
+                    <p className="text-xs text-gray-600">Configure in minutes, start accepting payments today</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                  <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: '#b722c1' }}></div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 text-sm mb-1">Your own dashboard</h3>
+                    <p className="text-xs text-gray-600">Full visibility and control over all transactions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* How to Get Started Section */}
+            <div className="mb-8">
+              <h2 className="text-xl font-semibold text-gray-900 mb-2">How to get started:</h2>
+              <p className="text-gray-600 mb-6">Most merchants go live and start selling within hours, not days.</p>
+              
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                <div className="flex items-center justify-between">
+                  <div className="flex flex-col items-center text-center flex-1">
+                    <div className="w-10 h-10 rounded-full text-white flex items-center justify-center text-sm font-bold mb-3" 
+                         style={{ backgroundColor: '#b722c1' }}>1</div>
+                    <h3 className="font-bold text-gray-900 text-sm mb-1">Activate</h3>
+                    <p className="text-xs text-gray-600">One click to enable OnPay</p>
+                  </div>
+                  
+                  <div className="hidden md:flex items-center px-4">
+                    <div className="w-8 h-0.5 bg-gray-300"></div>
+                  </div>
+                  
+                  <div className="flex flex-col items-center text-center flex-1">
+                    <div className="w-10 h-10 rounded-full text-white flex items-center justify-center text-sm font-bold mb-3" 
+                         style={{ backgroundColor: '#b722c1' }}>2</div>
+                    <h3 className="font-bold text-gray-900 text-sm mb-1">Set up payment processing</h3>
+                    <p className="text-xs text-gray-600">Instant Clearhaus contract activation</p>
+                  </div>
+                  
+                  <div className="hidden md:flex items-center px-4">
+                    <div className="w-8 h-0.5 bg-gray-300"></div>
+                  </div>
+                  
+                  <div className="flex flex-col items-center text-center flex-1">
+                    <div className="w-10 h-10 rounded-full text-white flex items-center justify-center text-sm font-bold mb-3" 
+                         style={{ backgroundColor: '#b722c1' }}>3</div>
+                    <h3 className="font-bold text-gray-900 text-sm mb-1">Connect your store</h3>
+                    <p className="text-xs text-gray-600">Plugin or API integration</p>
+                  </div>
+                  
+                  <div className="hidden md:flex items-center px-4">
+                    <div className="w-8 h-0.5 bg-gray-300"></div>
+                  </div>
+                  
+                  <div className="flex flex-col items-center text-center flex-1">
+                    <div className="w-10 h-10 rounded-full text-white flex items-center justify-center text-sm font-bold mb-3" 
+                         style={{ backgroundColor: '#b722c1' }}>4</div>
+                    <h3 className="font-bold text-gray-900 text-sm mb-1">Start earning</h3>
+                    <p className="text-xs text-gray-600">Accept payments immediately</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom CTA Button */}
+            <div className="text-center">
+              <Button 
+                style={{ backgroundColor: '#b722c1' }} 
+                className="hover:opacity-90 text-white px-8 py-3 text-lg font-medium mb-2"
+              >
+                Activate OnPay Payments
+              </Button>
+              <div className="text-sm text-green-600 font-medium">
+                It's free to use OnPay
+              </div>
             </div>
           </div>
         </div>
