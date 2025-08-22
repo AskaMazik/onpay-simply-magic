@@ -273,7 +273,7 @@ const OnPayLanding = () => {
                 <div className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg border border-gray-100">
                   <div>
                     <h3 className="font-bold text-gray-900 text-sm mb-1">Essential payment methods</h3>
-                    <p className="text-xs text-gray-600">Cards, Apple Pay, Google Pay, Klarna</p>
+                    <p className="text-xs text-gray-600">Get paid seamlessly with the methods your customers already trust.</p>
                   </div>
                 </div>
                 
