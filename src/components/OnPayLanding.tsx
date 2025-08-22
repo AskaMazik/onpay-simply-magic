@@ -295,7 +295,7 @@ const OnPayLanding = () => {
                 <p className="text-muted mb-4">Most merchants go live and start selling within hours, not days.</p>
                 
                 <div className="bg-light rounded-3 p-5">
-                  <div className="d-flex justify-content-center align-items-center">
+                  <div className="d-flex justify-content-center align-items-start">
                     <div className="text-center">
                       <div className="d-flex align-items-center justify-content-center mx-auto mb-3" style={{width: '52px', height: '52px', borderRadius: '50%', border: '2px solid #c156db', backgroundColor: 'transparent'}}>
                         <span className="fw-bold" style={{fontSize: '16px', color: '#c156db'}}>1</span>
@@ -306,7 +306,7 @@ const OnPayLanding = () => {
                       </div>
                     </div>
                     
-                    <div className="px-4">
+                    <div className="d-flex align-items-center" style={{paddingTop: '26px', paddingLeft: '20px', paddingRight: '20px'}}>
                       <div style={{width: '60px', height: '2px', backgroundColor: '#ddd'}}></div>
                     </div>
                     
@@ -320,7 +320,7 @@ const OnPayLanding = () => {
                       </div>
                     </div>
                     
-                    <div className="px-4">
+                    <div className="d-flex align-items-center" style={{paddingTop: '26px', paddingLeft: '20px', paddingRight: '20px'}}>
                       <div style={{width: '60px', height: '2px', backgroundColor: '#ddd'}}></div>
                     </div>
                     
@@ -334,7 +334,7 @@ const OnPayLanding = () => {
                       </div>
                     </div>
                     
-                    <div className="px-4">
+                    <div className="d-flex align-items-center" style={{paddingTop: '26px', paddingLeft: '20px', paddingRight: '20px'}}>
                       <div style={{width: '60px', height: '2px', backgroundColor: '#ddd'}}></div>
                     </div>
                     
