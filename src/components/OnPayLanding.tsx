@@ -23,7 +23,7 @@ const OnPayLanding = () => {
     { icon: Database, label: "MS SQL" },
     { icon: Zap, label: "Redis", badge: "New" },
     { icon: Database, label: "PostgreSQL", badge: "BETA" },
-    { icon: CreditCard, label: "Payment gateway", badge: "New", active: true },
+    { icon: CreditCard, label: "Online payments", badge: "New", active: true },
     { icon: Shield, label: "iubenda" },
     { icon: Building2, label: "Booking system", badge: "New" },
   ];
