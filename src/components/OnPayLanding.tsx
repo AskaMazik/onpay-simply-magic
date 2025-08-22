@@ -195,7 +195,7 @@ const OnPayLanding = () => {
               <Card className="border-2 relative max-w-md" style={{ borderColor: '#b722c1' }}>
                 <div className="absolute -top-3 left-6">
                   <Badge className="text-white text-xs px-3 py-1" style={{ backgroundColor: '#b722c1' }}>
-                    free
+                    FREE
                   </Badge>
                 </div>
                 <CardContent className="p-6">
