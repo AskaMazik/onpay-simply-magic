@@ -159,9 +159,16 @@ const OnPayLanding = () => {
               {/* Main Card */}
               <div className="card mb-5" style={{border: '1px solid #e5e5e5'}}>
                 <div className="card-body p-4 pb-4">
-                  <h2 className="h4 fw-semibold text-dark mb-3">
-                    Start accepting online payments today — only pay when you sell.
-                  </h2>
+                  <div className="d-flex align-items-center justify-content-between mb-4">
+                    <h2 className="h4 fw-semibold text-dark mb-0">
+                      Start accepting online payments today — only pay when you sell.
+                    </h2>
+                    <div className="ms-4">
+                      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTIwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8dGV4dCB4PSI2MCIgeT0iMjQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNmZjY2OWEiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9ImJvbGQiPk9uUGF5PC90ZXh0Pgo8L3N2Zz4K" 
+                           alt="OnPay Logo" 
+                           style={{height: '32px', width: 'auto'}} />
+                    </div>
+                  </div>
                   <p className="text-muted mb-4">
                     Turn your <strong className="text-dark">online visitors into paying customers</strong>. Activate OnPay and start accepting all the key payment methods to grow your business in Denmark and abroad.
                   </p>
@@ -294,11 +301,11 @@ const OnPayLanding = () => {
                 <h2 className="h4 fw-semibold text-dark mb-2">How to get started:</h2>
                 <p className="text-muted mb-4">Most merchants go live and start selling within hours, not days.</p>
                 
-                <div className="bg-light rounded-3 p-5">
-                  <div className="d-flex justify-content-center align-items-start">
+                <div className="bg-light rounded-3 p-5 border" style={{border: '1px solid #e5e5e5 !important', marginTop: '1rem', marginBottom: '1rem'}}>
+                  <div className="d-flex justify-content-center align-items-start flex-wrap gap-3">
                     <div className="text-center">
-                      <div className="d-flex align-items-center justify-content-center mx-auto mb-3" style={{width: '52px', height: '52px', borderRadius: '50%', border: '2px solid #c156db', backgroundColor: 'transparent'}}>
-                        <span className="fw-bold" style={{fontSize: '16px', color: '#c156db'}}>1</span>
+                      <div className="d-flex align-items-center justify-content-center mx-auto mb-3" style={{width: '52px', height: '52px', borderRadius: '50%', border: '2px solid #b722c1', backgroundColor: 'transparent'}}>
+                        <span className="fw-bold" style={{fontSize: '16px', color: '#b722c1'}}>1</span>
                       </div>
                       <div style={{width: '140px'}}>
                         <h3 className="fw-bold text-dark mb-2" style={{fontSize: '14px'}}>Activate</h3>
@@ -306,13 +313,13 @@ const OnPayLanding = () => {
                       </div>
                     </div>
                     
-                    <div className="d-flex align-items-center" style={{paddingTop: '26px', paddingLeft: '20px', paddingRight: '20px'}}>
-                      <div style={{width: '60px', height: '2px', backgroundColor: '#ddd'}}></div>
+                    <div className="d-flex align-items-center d-none d-md-block" style={{paddingTop: '26px'}}>
+                      <div style={{width: '40px', height: '2px', backgroundColor: '#ddd'}}></div>
                     </div>
                     
                     <div className="text-center">
-                      <div className="d-flex align-items-center justify-content-center mx-auto mb-3" style={{width: '52px', height: '52px', borderRadius: '50%', border: '2px solid #c156db', backgroundColor: 'transparent'}}>
-                        <span className="fw-bold" style={{fontSize: '16px', color: '#c156db'}}>2</span>
+                      <div className="d-flex align-items-center justify-content-center mx-auto mb-3" style={{width: '52px', height: '52px', borderRadius: '50%', border: '2px solid #b722c1', backgroundColor: 'transparent'}}>
+                        <span className="fw-bold" style={{fontSize: '16px', color: '#b722c1'}}>2</span>
                       </div>
                       <div style={{width: '140px'}}>
                         <h3 className="fw-bold text-dark mb-2" style={{fontSize: '14px'}}>Set up payment processing</h3>
@@ -320,31 +327,31 @@ const OnPayLanding = () => {
                       </div>
                     </div>
                     
-                    <div className="d-flex align-items-center" style={{paddingTop: '26px', paddingLeft: '20px', paddingRight: '20px'}}>
-                      <div style={{width: '60px', height: '2px', backgroundColor: '#ddd'}}></div>
+                    <div className="d-flex align-items-center d-none d-md-block" style={{paddingTop: '26px'}}>
+                      <div style={{width: '40px', height: '2px', backgroundColor: '#ddd'}}></div>
                     </div>
                     
                     <div className="text-center">
-                      <div className="d-flex align-items-center justify-content-center mx-auto mb-3" style={{width: '52px', height: '52px', borderRadius: '50%', border: '2px solid #c156db', backgroundColor: 'transparent'}}>
-                        <span className="fw-bold" style={{fontSize: '16px', color: '#c156db'}}>3</span>
+                      <div className="d-flex align-items-center justify-content-center mx-auto mb-3" style={{width: '52px', height: '52px', borderRadius: '50%', border: '2px solid #b722c1', backgroundColor: 'transparent'}}>
+                        <span className="fw-bold" style={{fontSize: '16px', color: '#b722c1'}}>3</span>
                       </div>
                       <div style={{width: '140px'}}>
                         <h3 className="fw-bold text-dark mb-2" style={{fontSize: '14px'}}>Connect your store</h3>
-                        <p className="text-muted mb-0" style={{fontSize: '13px'}}>Plugin or API integration</p>
+                        <p className="text-muted mb-0" style={{fontSize: '13px'}}>Plugin or custom integration</p>
                       </div>
                     </div>
                     
-                    <div className="d-flex align-items-center" style={{paddingTop: '26px', paddingLeft: '20px', paddingRight: '20px'}}>
-                      <div style={{width: '60px', height: '2px', backgroundColor: '#ddd'}}></div>
+                    <div className="d-flex align-items-center d-none d-md-block" style={{paddingTop: '26px'}}>
+                      <div style={{width: '40px', height: '2px', backgroundColor: '#ddd'}}></div>
                     </div>
                     
                     <div className="text-center">
-                      <div className="d-flex align-items-center justify-content-center mx-auto mb-3" style={{width: '52px', height: '52px', borderRadius: '50%', border: '2px solid #c156db', backgroundColor: 'transparent'}}>
-                        <span className="fw-bold" style={{fontSize: '16px', color: '#c156db'}}>4</span>
+                      <div className="d-flex align-items-center justify-content-center mx-auto mb-3" style={{width: '52px', height: '52px', borderRadius: '50%', border: '2px solid #b722c1', backgroundColor: 'transparent'}}>
+                        <span className="fw-bold" style={{fontSize: '16px', color: '#b722c1'}}>4</span>
                       </div>
                       <div style={{width: '140px'}}>
-                        <h3 className="fw-bold text-dark mb-2" style={{fontSize: '14px'}}>Start earning</h3>
-                        <p className="text-muted mb-0" style={{fontSize: '13px'}}>Accept payments immediately</p>
+                        <h3 className="fw-bold text-dark mb-2" style={{fontSize: '14px'}}>Start selling</h3>
+                        <p className="text-muted mb-0" style={{fontSize: '13px'}}>Accept payments from customers worldwide</p>
                       </div>
                     </div>
                   </div>
@@ -352,9 +359,9 @@ const OnPayLanding = () => {
               </div>
 
               {/* Bottom CTA Button */}
-              <div className="text-center mt-5">
-                <button className="btn simply-purple px-4 py-2 fw-medium mb-2" style={{fontSize: '16px'}}>
-                  Activate OnPay Payments
+              <div className="text-center pt-4">
+                <button className="btn simply-purple px-4 py-2 fw-medium mb-2" style={{fontSize: '16px', borderRadius: '6px'}}>
+                  Get Started with OnPay
                 </button>
                 <div className="small text-success fw-medium">
                   Go live in minutes
