@@ -16,8 +16,37 @@
         :root {
             --bs-primary: #b722c1;
             --bs-primary-rgb: 183, 34, 193;
+            --bs-primary-hover: #9a1ca7;
+            --bs-primary-active: #9a1ca7;
             --bs-success: #28a745;
             --bs-success-rgb: 40, 167, 69;
+        }
+        
+        /* Override Bootstrap button styles */
+        .btn-primary {
+            --bs-btn-bg: #b722c1;
+            --bs-btn-border-color: #b722c1;
+            --bs-btn-hover-bg: #9a1ca7;
+            --bs-btn-hover-border-color: #9a1ca7;
+            --bs-btn-active-bg: #9a1ca7;
+            --bs-btn-active-border-color: #9a1ca7;
+        }
+        
+        /* Override border colors */
+        .border-primary {
+            --bs-border-color: #b722c1 !important;
+        }
+        
+        /* Override badge colors */
+        .bg-primary {
+            --bs-bg-opacity: 1;
+            background-color: #b722c1 !important;
+        }
+        
+        /* Override text colors */
+        .text-primary {
+            --bs-text-opacity: 1;
+            color: #b722c1 !important;
         }
     </style>
 </head>
