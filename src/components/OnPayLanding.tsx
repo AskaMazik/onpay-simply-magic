@@ -158,11 +158,7 @@ const OnPayLanding = () => {
 
               {/* Main Card */}
               <div className="card mb-5" style={{border: '1px solid #e5e5e5'}}>
-                <div className="card-body p-4 pb-4 position-relative">
-                  {/* OnPay Logo - Top Right */}
-                  <div className="position-absolute top-0 end-0 p-3">
-                    <img src="/lovable-uploads/aafee233-c4ab-4d28-9b29-b5bfad2d73c0.png" alt="OnPay" style={{height: '24px', width: 'auto'}} />
-                  </div>
+                <div className="card-body p-4 pb-4">
                   <h2 className="h4 fw-semibold text-dark mb-3">
                     Start accepting online payments today — only pay when you sell.
                   </h2>
