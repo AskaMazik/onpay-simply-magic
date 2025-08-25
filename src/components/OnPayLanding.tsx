@@ -159,11 +159,15 @@ const OnPayLanding = () => {
               {/* Main Card */}
               <div className="card mb-5" style={{border: '1px solid #e5e5e5'}}>
                 <div className="card-body p-4 pb-4">
+                  {/* OnPay Logo */}
+                  <div className="text-center mb-4">
+                    <img src="/lovable-uploads/aafee233-c4ab-4d28-9b29-b5bfad2d73c0.png" alt="OnPay" style={{height: '48px', width: 'auto'}} />
+                  </div>
                   <h2 className="h4 fw-semibold text-dark mb-3">
                     Start accepting online payments today — only pay when you sell.
                   </h2>
                   <p className="text-muted mb-4">
-                    Turn your <strong className="text-dark">online visitors into paying customers</strong>. Activate OnPay and start accepting all the key payment methods to grow your business in Denmark and abroad.
+                    Turn your <span className="text-dark">online visitors</span> into paying customers. Activate OnPay and start accepting all the key payment methods to grow your business in Denmark and abroad.
                   </p>
                   <div className="text-center">
                     <button className="btn simply-purple px-4 py-2 fw-medium mb-2" style={{fontSize: '16px', borderRadius: '6px'}}>
